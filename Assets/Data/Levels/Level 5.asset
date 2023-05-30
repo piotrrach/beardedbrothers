@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68e709d5ad61e844aaff5e8031a4eb8, type: 3}
+  m_Name: Level 5
+  m_EditorClassIdentifier: 
+  _entitySetsToBeSpawned:
+  - <EntityType>k__BackingField: {fileID: 11400000, guid: a94cc65779ffba54bb6c0ead373e2a5b, type: 2}
+    <NumberOfEntities>k__BackingField: 20
+  - <EntityType>k__BackingField: {fileID: 11400000, guid: 1df7514fa51b79c4b858f2edbd4f70ce, type: 2}
+    <NumberOfEntities>k__BackingField: 30
+  - <EntityType>k__BackingField: {fileID: 11400000, guid: 86243d0404d456c4bb3bb571a35a394d, type: 2}
+    <NumberOfEntities>k__BackingField: 40
