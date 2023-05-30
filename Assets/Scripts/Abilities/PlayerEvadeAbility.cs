@@ -31,7 +31,7 @@ namespace Assets.Scripts.Abilities
 
         private void OnDisable()
         {
-            _settings.TriggerEvent.AddListener(OnPlayerHit);
+            _settings.TriggerEvent.RemoveListener(OnPlayerHit);
         }
 
         private void Update()

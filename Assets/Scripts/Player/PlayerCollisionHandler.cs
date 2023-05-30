@@ -12,7 +12,7 @@ namespace Assets.Scripts.Player
             var healthOfCollision = collider.gameObject.GetComponent<Health>();
             if (healthOfCollision)
             {
-                healthOfCollision.ApplyDamage(float.MaxValue);
+                healthOfCollision.ApplyDamage();
             }
         }
     }

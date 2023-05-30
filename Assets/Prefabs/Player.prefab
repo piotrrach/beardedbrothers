@@ -190,7 +190,7 @@ MonoBehaviour:
   _settings: {fileID: 11400000, guid: cce5d44f82a7c294f8c91cdb82bba38d, type: 2}
   playerHealthHandler: {fileID: 1905200136}
   _rigidbody2D: {fileID: 8414463624935358254}
-  _debug: 0
+  _debug: 1
 --- !u!58 &3922149255202399185
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ namespace Assets.Scripts.Entities.Bullets
             var healthOfCollision = collision.gameObject.GetComponent<Health>();
             if (healthOfCollision)
             {
-                healthOfCollision.ApplyDamage(1);
+                healthOfCollision.ApplyDamage();
                 gameObject.SetActive(false);
             }
         }

@@ -22,7 +22,7 @@ namespace Assets.Scripts.Entities
             HP = _initialHealth.Value;
         }
 
-        public virtual void ApplyDamage(float damage)
+        public virtual void ApplyDamage(float damage = 1)
         {
             HP -= damage;
             if(HP > 0)

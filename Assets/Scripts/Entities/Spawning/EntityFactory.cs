@@ -30,6 +30,12 @@ namespace Assets.Scripts.Entities.Spawning
 
             for (int i = 0; i < _pool.Count; i++)
             {
+                if(_pool[i] == null)
+                {
+                    _pool.RemoveAt(i);
+                    continue;
+                }
+
                 if (!_pool[i].activeSelf)
                 {
                     _pool[i].transform.position = _spawnPositionProvider != null ? _spawnPositionProvider.GetNextSpawnPosition() : Vector2.zero;
