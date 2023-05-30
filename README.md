@@ -10,6 +10,7 @@ You can always create more levels but remember to add them to the LevelsLoader o
 
 It is possible to modify almost any design values within "Data" folder in similar way, like asteroirds speed:
 ![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/fd62c591-388b-4b5a-8ca5-4057afa53db4)
+
 or player shoot cooldown:
 ![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/690f292c-3c42-41e9-b503-51ab44fd4aac)
 
