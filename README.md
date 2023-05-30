@@ -1,6 +1,20 @@
 # BeardedBrothers.games
 BeardedBrothers's recruitment task for Unity Developer
 
+To test the project simply open the "Main" scene and press play button.
+In order to twaek levels get into the folder Data/Levels and adjust levels settings as pleased:
+![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/7ddf8775-e14f-42c2-9589-791c55fddb46)
+
+You can always create more levels but remember to add them to the LevelsLoader object in "GameplayScene":
+![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/030c0984-f282-4dce-9df7-23a552c8e2d7)
+
+It is possible to modify almost any design values within "Data" folder in similar way, like asteroirds speed:
+![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/fd62c591-388b-4b5a-8ca5-4057afa53db4)
+or player shoot cooldown:
+![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/690f292c-3c42-41e9-b503-51ab44fd4aac)
+
+# Task details
+In a nutshell:
 Create a simple game based on Asteroids game:
 https://www.youtube.com/watch?v=WYSupJ5r2zo
 
