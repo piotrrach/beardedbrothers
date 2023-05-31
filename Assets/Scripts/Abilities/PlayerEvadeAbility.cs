@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.GameEvents;
-using Assets.Scripts.Player;
-using System;
+﻿using Assets.Scripts.Player;
 using UnityEngine;
 
 namespace Assets.Scripts.Abilities

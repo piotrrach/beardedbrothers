@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4318b728b56fa9b4a9d5af4980af6152, type: 3}
   m_Name: EnemyShip - not imlemented yet
   m_EditorClassIdentifier: 
-  <GameObject>k__BackingField: {fileID: 0}
+  <GameObject>k__BackingField: {fileID: 1493773183802988233, guid: ac599524db7d14d48b32b9d3af8ed225, type: 3}
   <Spawner>k__BackingField: {fileID: 11400000, guid: 81995bb0147b62a4583f043c3b625519, type: 2}

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4899ac46d37764479011a1f21fad84f, type: 3}
-  m_Name: PlayerShootCooldown
+  m_Name: EnemyShootCooldown
   m_EditorClassIdentifier: 
-  _value: 0.15
+  _value: 2

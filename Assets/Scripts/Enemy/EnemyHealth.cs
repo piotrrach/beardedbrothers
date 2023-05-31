@@ -1,13 +1,14 @@
-﻿using Assets.Scripts.SriptableVariables;
+﻿using Assets.Scripts.Entities.Bullets;
+using Assets.Scripts.SriptableVariables;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Assets.Scripts.Entities
+namespace Assets.Scripts.Enemy
 {
-    public class Health : MonoBehaviour
+    public class EnemyHealth : MonoBehaviour, IDamageable
     {
         [SerializeField]
-        public FloatVariable _initialHealth;
+        public IntVariable _initialHealth;
 
         [SerializeField]
         public UnityEvent _onDamaged;
@@ -15,14 +16,14 @@ namespace Assets.Scripts.Entities
         [SerializeField]
         private UnityEvent _onDeath;
 
-        public float HP { get; private set; }
+        public int HP { get; private set; }
 
         private void OnEnable()
         {
             HP = _initialHealth.Value;
         }
 
-        public virtual void ApplyDamage(float damage = 1)
+        public void ApplyDamage(int damage = 1)
         {
             HP -= damage;
             if(HP > 0)

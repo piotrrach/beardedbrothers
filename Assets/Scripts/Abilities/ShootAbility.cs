@@ -6,18 +6,18 @@ namespace Assets.Scripts.Abilities
 {
     public abstract class ShootAbility : MonoBehaviour
     {
+        protected float LastShotTime;
+
         [SerializeField] 
         private EntityFactory _bulletsSpawner;
         [SerializeField] 
         private Transform _spawnPointMarker;
         [SerializeField] 
-        private FloatVariable _cooldown;
-
-        private float _lastShotTime;
+        protected FloatVariable _cooldown;
 
         public void TryShoot()
         {
-            if(Time.time - _lastShotTime < _cooldown.Value)
+            if(Time.time - LastShotTime < _cooldown.Value)
             {
                 return;
             }
@@ -26,7 +26,7 @@ namespace Assets.Scripts.Abilities
             bullet.transform.position = _spawnPointMarker.transform.position;
             bullet.transform.rotation = _spawnPointMarker.transform.rotation;
 
-            _lastShotTime = Time.time;
+            LastShotTime = Time.time;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.GameEvents;
-using Assets.Scripts.SriptableVariables;
+﻿using Assets.Scripts.SriptableVariables;
 using System.Collections.Generic;
 using UnityEngine;
 

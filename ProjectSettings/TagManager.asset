@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Asteroids
   - Enemies
-  - 
-  - 
-  - 
+  - Player
+  - FriendlyBullets
+  - EnemyBullets
   - 
   - 
   - 

@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Entities;
-using Assets.Scripts.GameEvents;
+﻿using Assets.Scripts.Entities.Bullets;
 using UnityEngine;
 
 namespace Assets.Scripts.Player
@@ -9,10 +8,10 @@ namespace Assets.Scripts.Player
     {
         public void OnTriggerEnter2D(Collider2D collider)
         {
-            var healthOfCollision = collider.gameObject.GetComponent<Health>();
-            if (healthOfCollision)
+            var damageable = collider.gameObject.GetComponent<IDamageable>();
+            if (damageable != null)
             {
-                healthOfCollision.ApplyDamage();
+                damageable.ApplyDamage();
             }
         }
     }

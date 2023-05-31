@@ -1,11 +1,11 @@
-using Assets.Scripts.GameEvents;
+using Assets.Scripts.Entities.Bullets;
 using Assets.Scripts.SriptableVariables;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Assets.Scripts.Player
 {
-    public class PlayerHealthHandler : MonoBehaviour
+    public class PlayerHealthHandler : MonoBehaviour, IDamageable
     {
         [SerializeField]
         private IntVariable _lifesLeft;
@@ -29,13 +29,13 @@ namespace Assets.Scripts.Player
             _isPlayerDead.Value = false;
         }
 
-        public void ApplyDamage(int lives = 1)
+        public void ApplyDamage(int damage = 1)
         {
             if (IsImmortal)
             {
                 return;
             }
-            _lifesLeft.Value--;
+            _lifesLeft.Value -= damage;
             if (_lifesLeft.Value <= 0)
             {
                 _isPlayerDead.Value = true;

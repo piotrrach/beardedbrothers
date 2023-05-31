@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4899ac46d37764479011a1f21fad84f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a74f83f241257245a4616204691136c, type: 3}
   m_Name: AsteroidMaxHealth
   m_EditorClassIdentifier: 
   _value: 1

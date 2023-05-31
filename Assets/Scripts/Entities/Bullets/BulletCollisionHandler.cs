@@ -6,10 +6,10 @@ namespace Assets.Scripts.Entities.Bullets
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            var healthOfCollision = collision.gameObject.GetComponent<Health>();
-            if (healthOfCollision)
+            var damageable = collision.gameObject.GetComponent<IDamageable>();
+            if (damageable != null)
             {
-                healthOfCollision.ApplyDamage();
+                damageable.ApplyDamage();
                 gameObject.SetActive(false);
             }
         }

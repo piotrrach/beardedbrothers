@@ -54,6 +54,7 @@ namespace Assets.Scripts.SceneLoading
             {
                 yield return null;
             }
+            yield return new WaitForSeconds(0.1f);
 
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(_currentScene));
 

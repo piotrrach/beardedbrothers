@@ -10,7 +10,7 @@ namespace Assets.Scripts.Entities.Spawning
         [Header("Object to be spawned")]
         [SerializeField]
         private GameObject _objectToSpawn;
-        [Header("Optional, if not provided, object would spawn at the (0,0)")]
+        [Header("Optional, if not provided, object would spawn at (0,0)")]
         [SerializeField]
         private SpawnPositionProvider _spawnPositionProvider;
 
@@ -30,7 +30,7 @@ namespace Assets.Scripts.Entities.Spawning
 
             for (int i = 0; i < _pool.Count; i++)
             {
-                if(_pool[i] == null)
+                if (_pool[i] == null)
                 {
                     _pool.RemoveAt(i);
                     continue;
@@ -38,7 +38,7 @@ namespace Assets.Scripts.Entities.Spawning
 
                 if (!_pool[i].activeSelf)
                 {
-                    _pool[i].transform.position = _spawnPositionProvider != null ? _spawnPositionProvider.GetNextSpawnPosition() : Vector2.zero;
+                    _pool[i].transform.position = objectSpawnPosition;
                     _pool[i].SetActive(true);
                     return _pool[i];
                 }
