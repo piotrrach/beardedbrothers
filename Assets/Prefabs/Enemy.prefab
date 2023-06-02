@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: -8043327978493100769}
   - component: {fileID: 451806677}
   - component: {fileID: -6769825080567342324}
+  - component: {fileID: 3323586883468649784}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -150,6 +151,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: b32886f8d8967c341ba7ae3a44870646, type: 2}
+        m_TargetAssemblyTypeName: Assets.Scripts.SriptableVariables.UIntVariable,
+          Assembly-CSharp
+        m_MethodName: Remove
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-8043327978493100769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +208,37 @@ MonoBehaviour:
   _rigidbody: {fileID: 8414463624935358254}
   _model: {fileID: 1493773183964924590}
   _isPlayerDead: {fileID: 11400000, guid: cc922ac363353324e93973008c1ca422, type: 2}
+  _settings: {fileID: 11400000, guid: cb9aa6cdd6e893248a2d30a671d4266e, type: 2}
+  _debug: 1
+--- !u!114 &3323586883468649784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493773183802988233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2ecf89e1a39804682bcbaeb225f6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: b32886f8d8967c341ba7ae3a44870646, type: 2}
+        m_TargetAssemblyTypeName: Assets.Scripts.SriptableVariables.UIntVariable,
+          Assembly-CSharp
+        m_MethodName: Add
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _mode: 2
 --- !u!1 &1493773183964924591
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80ecb01aa4fb6dc4d9adcfc4c473c434, type: 3}
-  m_Name: Factory_Enemy - not implemented yet
+  m_Name: Factory_Enemy
   m_EditorClassIdentifier: 
-  _objectToSpawn: {fileID: 443134404988279893, guid: 99f53733abca2e548a85d2baa3733077, type: 3}
+  _objectToSpawn: {fileID: 1493773183802988233, guid: ac599524db7d14d48b32b9d3af8ed225, type: 3}
   _spawnPositionProvider: {fileID: 11400000, guid: 67242693c5e09654cb4aade4cb993438, type: 2}

@@ -191,7 +191,7 @@ MonoBehaviour:
   _settings: {fileID: 11400000, guid: cce5d44f82a7c294f8c91cdb82bba38d, type: 2}
   playerHealthHandler: {fileID: 1905200136}
   _rigidbody2D: {fileID: 8414463624935358254}
-  _debug: 1
+  _debug: 0
 --- !u!114 &5060356705553834542
 MonoBehaviour:
   m_ObjectHideFlags: 0

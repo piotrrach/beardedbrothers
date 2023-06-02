@@ -1,17 +1,18 @@
-﻿using Assets.Scripts.Player;
+﻿using Assets.Scripts.Entities.Bullets;
+using Assets.Scripts.Player;
 using UnityEngine;
 
 namespace Assets.Scripts.Entities.Asteroids
 {
     public class AsteroidCollisionHandler : MonoBehaviour
     {
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collider)
         {
-            var playerHealth = collision.gameObject.GetComponent<PlayerHealthHandler>();
+            var damageable = collider.gameObject.GetComponent<IDamageable>();
 
-            if (playerHealth)
+            if (damageable != null)
             {
-                playerHealth.ApplyDamage();
+                damageable.ApplyDamage();
             }
         }
     }
