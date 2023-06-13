@@ -1,5 +1,7 @@
 # Code sample: Asteroids
 
+The project is made using architecture architecture heavily dependent on scriptable objects.
+
 To test the project simply open the "Main" scene and press play button.
 
 ![image](https://github.com/piotrrach/beardedbrothers/assets/126329938/6de0aaaf-53ce-43ab-85af-ab431bf77da3)
