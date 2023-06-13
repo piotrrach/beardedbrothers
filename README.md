@@ -1,5 +1,4 @@
-# BeardedBrothers.games
-BeardedBrothers's recruitment task for Unity Developer
+# Code sample: Asteroids
 
 To test the project simply open the "Main" scene and press play button.
 
